@@ -14,7 +14,6 @@
 
 .body {
   font-family: 'Roboto' 'Raleway';
-  background: #2f303a;
 }
 
 .header-container {
@@ -24,6 +23,10 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  display: flex;
+}
+.menu-list {
+  display: flex;
 }
 
 .menu-link {
@@ -35,10 +38,14 @@
 }
 
 .menu-contact {
+  display: flex;
+}
+
+.contact-item {
   color: #757575;
 }
 
-.menu-contact:hover {
+.contact-item:hover {
   color: #2196f3;
 }
 
@@ -55,21 +62,151 @@
   color: #2196f3;
 }
 
-.footer {
+.bussines {
   background: #2f303a;
 }
 
-.bussines {
-  background: #2f303a;
+.bussines-h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button-buy {
+  /* Добавить стиль по центру */
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button-buy:hover {
+  /* Незнаю чи треба щось додавати */
+}
+
+.bussines-list {
+  display: flex;
+}
+
+.bussines-advantages-h {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.bussines-advantages-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.work-list {
+  display: flex;
+}
+
+.h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.team {
+  background: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+
+.h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
 
 .footer-container {
   background: #2f303a;
 }
 
+.footer-contact-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.location {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* Page portfolio*/
+.portfolio-button {
+  display: flex;
+}
+
 .button {
-  background: #f5f4fa;
-  border-radius: 4px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -77,6 +214,9 @@
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 .button:hover {
   color: #ffffff;
@@ -84,5 +224,28 @@
   /* shadow-middle */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+}
+.project-list {
+  display: flex;
+}
+
+.project-list > h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.project-list > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  color: #757575;
 }
